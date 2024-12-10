@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuroop Roy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(138, 28, 228);
+            color: wheat;
+            font-family: "Kaushan Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(73, 5, 129);
+            flex-wrap: wrap;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        nav ul li a:hover {
+            color: rgb(219, 182, 113);
+        }
+
+        main hr {
+            border: 0;
+            background: #511685;
+            height: 1.2px;
+            margin: 40px auto;
+            width: 50%;
+        }
+
+        .left {
+            font-size: 1.2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .firstSection>div {
+            width: 90%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #511685;
+            color: white;
+            border-radius: 23px;
+            border: 2px solid white;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .blue {
+            color: rgb(48, 3, 85);
+        }
+
+        #element {
+            color: rgb(48, 3, 85);
+        }
+
+        .secondSection {
+            max-width: 90vw;
+            margin: auto;
+        }
+
+        .secondSection h1 {
+            font-size: 2.0rem;
+        }
+
+        .secondSection .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 45px 0;
+        }
+
+        .secondSection .vertical {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .vertical img {
+            width: 59px;
+            margin-bottom: 10px;
+        }
+
+        .vertical-title {
+            font-size: 21px;
+        }
+
+        .vertical-desc {
+            font-size: 18px;
+            color: rgb(48, 3, 85);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstSection {
+                flex-direction: column;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+
+            .secondSection .box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .secondSection .vertical {
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 10px;
+            }
+
+            .left {
+                font-size: 1.5rem;
+            }
+
+            .leftSection {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                ANUROOP ROY
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hey, I'm <span class="blue">Anuroop Roy</span>
+                <div>and I am into <span id="element"></span></div>
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit my Github</button>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpeg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="celebal.jpeg" alt="">
+                    <div class="vertical-title">
+                        Data Scientist Intern (2020-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo neque iste possimus quam quae et
+                        inventore animi, explicabo assumenda officiis.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="lg.jpeg" alt="">
+                    <div class="vertical-title">
+                        Field Quality Engineer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo neque iste possimus quam quae et
+                        inventore animi, explicabo assumenda officiis.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Node.JS Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo neque iste possimus quam quae et
+                        inventore animi, explicabo assumenda officiis.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Machine Learning', 'Neural Networks', 'App Development'],
+            typeSpeed: 70,
+            loop: true,
+        });
+    </script>
+</body>
